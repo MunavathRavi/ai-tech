@@ -1,0 +1,264 @@
+[
+ {
+  "id": "s01",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need a booking form for our dental clinic.\nCLIENT: We want email reminders the day before."
+  ],
+  "expect_requirements": [
+   "booking",
+   "reminder"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s02",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: I want a page listing our 40 products with filters.\nCLIENT: Please add a contact form."
+  ],
+  "expect_requirements": [
+   "products",
+   "contact"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s03",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need to take donations online.\nCLIENT: The site should be faster, it feels slow."
+  ],
+  "expect_requirements": [
+   "donation"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s04",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We want to change the banner colour to match our logo."
+  ],
+  "expect_requirements": [
+   "colour"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s05",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need a member login area.\nCLIENT: We want a blog we can edit ourselves.\nCLIENT: Forget about a mobile app, we don't need one."
+  ],
+  "expect_requirements": [
+   "login",
+   "blog"
+  ],
+  "expect_out_of_scope": [
+   "mobile app"
+  ]
+ },
+ {
+  "id": "s06",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need an events calendar with sign-ups.\nCLIENT: I want to export attendees to Excel."
+  ],
+  "expect_requirements": [
+   "calendar",
+   "export"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s07",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need to sell gift cards online.\nCLIENT: Please remove the old pricing page."
+  ],
+  "expect_requirements": [
+   "gift cards"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s08",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We want customers to leave reviews.\nCLIENT: We need photos of our work in a gallery."
+  ],
+  "expect_requirements": [
+   "reviews",
+   "gallery"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s09",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: Can you build a quote calculator for our fencing jobs?\nCLIENT: We don't need online payments, skip that."
+  ],
+  "expect_requirements": [
+   "calculator"
+  ],
+  "expect_out_of_scope": [
+   "online payments"
+  ]
+ },
+ {
+  "id": "s10",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need a directory of our partner shops with a map."
+  ],
+  "expect_requirements": [
+   "directory"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s11",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We want to translate the site into Spanish.\nCLIENT: We need a cookie banner."
+  ],
+  "expect_requirements": [
+   "translate",
+   "cookie"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s12",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: Make the website nicer.\nCLIENT: We need a newsletter signup."
+  ],
+  "expect_requirements": [
+   "newsletter"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s13",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need staff accounts with limited permissions.\nCLIENT: We want to hide the prices page for now."
+  ],
+  "expect_requirements": [
+   "staff",
+   "prices"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s14",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: We need to import 500 members from a spreadsheet."
+  ],
+  "expect_requirements": [
+   "import"
+  ],
+  "expect_out_of_scope": []
+ },
+ {
+  "id": "s15",
+  "kind": "single",
+  "transcripts": [
+   "CLIENT: I want live chat on the site.\nCLIENT: We don't want a chatbot, forget it."
+  ],
+  "expect_requirements": [
+   "chat"
+  ],
+  "expect_out_of_scope": [
+   "chatbot"
+  ]
+ },
+ {
+  "id": "f01",
+  "kind": "followup",
+  "transcripts": [
+   "CLIENT: We need a newsletter signup.\nCLIENT: We need online ordering for cakes."
+  ],
+  "followup": "CLIENT: We no longer need the newsletter signup, drop it.",
+  "expect": {
+   "removed": [
+    "newsletter"
+   ],
+   "kept": [
+    "ordering"
+   ]
+  }
+ },
+ {
+  "id": "f02",
+  "kind": "followup",
+  "transcripts": [
+   "CLIENT: We need a booking form.\nCLIENT: We want email reminders for bookings."
+  ],
+  "followup": "CLIENT: The booking form must also take a deposit payment.",
+  "expect": {
+   "changed": [
+    "booking"
+   ],
+   "kept": [
+    "reminders"
+   ]
+  }
+ },
+ {
+  "id": "f03",
+  "kind": "followup",
+  "transcripts": [
+   "CLIENT: We need a photo gallery.\nCLIENT: We want customer reviews on the site."
+  ],
+  "followup": "CLIENT: We also want a gift voucher page for customers.",
+  "expect": {
+   "added": [
+    "voucher"
+   ],
+   "kept": [
+    "gallery",
+    "reviews"
+   ]
+  }
+ },
+ {
+  "id": "f04",
+  "kind": "followup",
+  "transcripts": [
+   "CLIENT: We need a members login area.\nCLIENT: We want a blog we can edit."
+  ],
+  "followup": "CLIENT: Forget the blog, we don't need the blog any more.",
+  "expect": {
+   "removed": [
+    "blog"
+   ],
+   "kept": [
+    "login"
+   ]
+  }
+ },
+ {
+  "id": "f05",
+  "kind": "followup",
+  "transcripts": [
+   "CLIENT: We need an events calendar.\nCLIENT: We want to export attendees to Excel."
+  ],
+  "followup": "CLIENT: The events calendar needs recurring weekly events.\nCLIENT: We also need a waiting list for full events.",
+  "expect": {
+   "changed": [
+    "calendar"
+   ],
+   "added": [
+    "waiting"
+   ],
+   "kept": [
+    "export"
+   ]
+  }
+ }
+]

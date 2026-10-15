@@ -1,0 +1,6 @@
+CONSULTANT: Tell me about the gym and what you need.
+CLIENT: We want members to book classes online and get a reminder email the day before.
+CLIENT: We need to show a weekly timetable on the website that updates when we change classes.
+CLIENT: I want the member login to be easier, people keep forgetting passwords.
+CLIENT: Can you improve the search so people find the right class faster?
+CLIENT: We don't want to handle payments on the site yet; skip that for now, no online payments.

@@ -1,0 +1,10 @@
+CONSULTANT: Thanks for making time. Tell me what you'd like from the website.
+CLIENT: We run a family bakery. We need online ordering for our cakes, with a pickup date and time.
+CONSULTANT: Anything on payments?
+CLIENT: Customers should pay a deposit by card when they order.
+CLIENT: We also want a newsletter signup on the homepage so people hear about seasonal specials.
+CONSULTANT: What else is annoying you right now?
+CLIENT: Honestly the menu page is a mess. Can you make it nicer and easier to update ourselves?
+CLIENT: And I want to change the homepage banner colour to match our new logo.
+CONSULTANT: Anything you definitely do not want?
+CLIENT: We don't need a mobile app. Forget about that, the website is enough.

@@ -1,0 +1,21 @@
+services:
+  brain:
+    build: ./knowledge_brain
+    env_file: .env
+    ports: ["8001:8001"]
+    volumes: ["brain-data:/data"]
+  inbox:
+    build: ./inbox_agent
+    env_file: .env
+    environment: { BRAIN_URL: "http://brain:8001", PORT: "8002", STATE_FILE: "/data/state.json" }
+    ports: ["8002:8002"]
+    volumes: ["inbox-data:/data"]
+    depends_on: [brain]
+  scope:
+    build: ./scope_agent
+    env_file: .env
+    environment: { BRAIN_URL: "http://brain:8001" }
+    ports: ["8003:8003"]
+    volumes: ["scope-data:/data"]
+    depends_on: [brain]
+volumes: { brain-data: {}, inbox-data: {}, scope-data: {} }

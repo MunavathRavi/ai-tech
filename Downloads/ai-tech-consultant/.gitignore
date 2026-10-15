@@ -1,0 +1,7 @@
+.env
+__pycache__/
+.pytest_cache/
+node_modules/
+*.db
+data/state.json
+scope_agent/data/projects/
